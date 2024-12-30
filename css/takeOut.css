@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --orange-main: rgb(255, 130, 0);
+    --gray-text: rgb(67, 67, 67);
+    --gray-bag-a: rgb(205, 205, 205);
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+
+
+
+body{
+    width: 100vw;
+}
+
+.header__restaurants{
+    padding: 0;
+    margin: 0;
+    background: red;
+    width: 100vw;
+    height: 7vh;
+}
+
+.nav__flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7vh;
+}
+
+.div__a{
+    background: yellow;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div__brookline{
+    background-color: var(--orange-main);
+    height: 100%;
+}
+
+.div__cambridge{
+    background-color: var(--gray-bag-a);
+}
+
+.nav__a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 7vh;
+}
+
+.a__cambridge{
+    color: black;
+}
+
+
+.check{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.label1{
+    cursor: pointer;
+} */
+
+/* #cambridge_check:checked ~ #cambridge{
+   display: none;
+}
+.brookline__check:checked + .brookline{
+    display: none;
+} */
+
+
+
+.sections .cambridge,
+.sections .brookline{
+    display: none;
+}
+
+.cambridge, .brookline{
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.header__restaurants{
+    background-color: red;
+    width: 100vw;
+    height: 7vh;
+    position: relative;
+}
+
+.header__restaurants__div{
+    background-color: blue;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div__back{
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 7vh;
+    text-align: center;
+ 
+}
+
+.div__back a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 7vh;
+}
+
+.label__cb{
+    width: 100%;
+    text-align: center;
+    background: green;
+    height: 100%;
+    line-height: 7vh;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+input[type="radio"]{
+    appearance: none;
+}
+
+.label__cb{
+    background: var(--gray-bag-a);
+    color: black;
+}
+
+.container.selected {
+    color: white;
+    background-color: var(--orange-main);
+  }
+
+.schedule__brookline{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: solid 2px var(--orange-main);
+}
+
+.schedule__text{
+    text-align: center;
+}
+
+.table__schedule{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+   
+}
+
+tr th{
+    border-bottom: 2px solid var(--orange-main);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.img__section{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.img__section img{
+    width: 100%;
+    height: auto;
+}
+
+.div__insideImg{
+    position: absolute;
+    top: 10px;
+    width: 160px;
+    height: 50px;
+    background-color: rgba(255, 132, 0, 0.871);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.insideImg1{
+    left: 10px;
+}
+
+.insideImg2{
+    right: 10px;
+}
+
+.div__insideImg a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.div__p{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer__sections{
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+}
+
+.text__info__div{
+   
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.text__info{
+    text-align: center;
+}
+
+.footer__main{
+    height: 10vh;
+    width: 100vw;
+    background-color:  var(--orange-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.a__design{
+
+}
+
+.footer__main__address{
+    width: 40%;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+
+    .header__desktop__takeout{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__desktop__takeout a{
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .header__desktop__takeout a img{
+        width: 120px;
+    }
+
+    .cards__desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+     .cambridge, .brookline, .a__phoneB, .a__phoneC, .header__restaurants{
+        display: none !important;
+    }
+
+    .brookline__desktop{
+        width: 500px;
+        max-width: 600px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.158);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+        border-radius: 20px;
+        transition: .2s;
+    }
+
+    .brookline__desktop:hover{
+        transform: translateY(-10px);
+        background-color: #ff66003a;
+    }
+
+    @keyframes cards_desktop {
+        0%{
+            tra
+        }
+
+        50%{
+
+        }
+
+        100%{
+
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    .brookline__desktop, .header__desktop__takeout{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-height:700px) {
+    .brookline__desktop{
+        height: 80vh;
+    }
+
+    .div__insideImg{
+
+
+
+    }
+       .img__section img{
+        display: none;
+       } 
+
+       .img__section{
+        height: 50px;
+       }
+}
+
+/* .cambridge, .brookline, */

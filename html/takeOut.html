@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/takeOut.css">
+</head>
+<body>
+    <!-- Necesitamos un menu, Ok como se hace esto? Se hace con unas reglas generales, tenemos el nav y tenemos el, header, aunque creo que para este tipos de disenos
+sale mejor tener un nav aunque el header creo que puede contener el nav-->
+    <header class="header__restaurants" id="header__restaurants">
+        <!-- <div>
+            <label for="check1" class="label1">Hola</label>
+            <input class="check1" id="check1" type="checkbox">
+         </div>
+         <div>
+            <label for="check2" class="label1">HOLA2</label>
+            <input class="check2" id="check2" type="checkbox">
+         </div> -->
+
+         <!-- <div>
+          <input type="radio" name="size">
+          <label for="cambridge">cambridge</label>
+
+          <input class="brookline__check" type="radio" name="size">
+          <label class="" for="brookline">brookline</label>
+         </div> -->
+
+         <div class="header__restaurants__div">
+          <label for="cambridge_check" class="label__cambridge label__cb container">
+            <input type="radio" name="location" value="cambridge" id="cambridge_check">
+            brookline
+          </label>
+          <label for="brookline__check" class="label__brookline label__cb container">
+            <input type="radio" name="location" value="brookline" id="brookline__check">
+            cambridge
+          </label>
+         </div>
+
+         <div class="div__back">
+          <a class="a__back" href="../index.html"><img src="../assets/logo.png" style="width: 80px; margin: 0;" alt=""></a>
+         </div>
+    </header>
+
+
+<main class="sections">
+    <div class="brookline">
+      <div class="img__section img__brookline">
+         <img src="../assets/Brookline.jpg" alt="">
+         <div class="div__insideImg insideImg1">
+          <a href="">Pick Up - Delivery</a>
+         </div>
+         <div class="div__insideImg insideImg2">
+          <a href="">Menu</a>
+         </div>
+     </div>
+        
+     <!-- <div class="schedule__brookline">
+         <div class="schedule__days schedule">
+              <p>Mon-Wed</p>
+              <p>Thursday</p>
+              <p>Fri&Sat</p>
+              <p>Sunday</p>
+          </div>
+
+          <div class="schedule__hours schedule">
+             <p>11am - 9pm</p>
+             <p>11am - 9:30pm</p>
+             <p>11am - 10:30pm</p>
+             <p>12 - 9pm</p>
+         </div> -->
+
+         <h1 class="schedule__text">SCHEDULE</h1>
+
+         <table class="table__schedule table__cambridge">
+          <tr>
+            <th class="left">Mon-Wed</th>
+            <th class="right">11am - 9pm</th>
+          </tr>
+          <tr>
+            <th class="left">Thursday</th>
+            <th class="right">11am - 9:30pm</th>
+          </tr>
+          <tr>
+            <th class="left">Fri&Sat</th>
+            <th class="right">11am - 10:30pm</th>
+          </tr>
+          <tr>
+            <th class="left">Sun</th>
+            <th class="right">12 - 9pm</th>
+          </tr>
+         </table>
+
+         <div class="text__info__div">
+          <p class="text__info">Closed on July 4th, Christmas Eve and Christmas Day</p>
+        </div>
+  
+
+     </div>
+
+      
+      
+   
+
+   
+
+   <div class="cambridge" id="cambridge">
+    <div class="img__section img__brookline">
+      <img src="../assets/cambridge.jpeg" alt="">
+      <div class="div__insideImg insideImg1">
+        <a href="">Pick Up - Delivery</a>
+       </div>
+       <div class="div__insideImg insideImg2">
+        <a href="">Menu</a>
+       </div>
+  </div>
+     
+  <!-- <div class="schedule__brookline">
+      <div class="schedule__days schedule">
+           <p>Mon-Wed</p>
+           <p>Thursday</p>
+           <p>Fri&Sat</p>
+           <p>Sunday</p>
+       </div>
+
+       <div class="schedule__hours schedule">
+          <p>11am - 9pm</p>
+          <p>11am - 9:30pm</p>
+          <p>11am - 10:30pm</p>
+          <p>12 - 9pm</p>
+      </div> -->
+
+      <h1 class="schedule__text">SCHEDULE</h1>
+
+      <table class="table__schedule table__cambridge">
+       <tr>
+         <th class="left">Mon-Wed</th>
+         <th class="right">11am - 9pm</th>
+       </tr>
+       <tr>
+         <th class="left">Thursday</th>
+         <th class="right">11am - 9:30pm</th>
+       </tr>
+       <tr>
+         <th class="left">Fri&Sat</th>
+         <th class="right">11am - 10:30pm</th>
+       </tr>
+       <tr>
+         <th class="left">Sun</th>
+         <th class="right">12 - 9pm</th>
+       </tr>
+      </table>
+
+      <div class="text__info__div">
+        <p class="text__info">Closed on July 4th, Christmas Eve and Christmas Day</p>
+      </div>
+
+  </div>
+
+    
+ </div>
+
+<!-- ACA COMIENZA EL DESKTOP -->
+
+<header class="header__desktop__takeout">
+  <a href="../index.html" class="">
+    <img src="../assets/logo.png" alt="">
+  </a>
+</header>
+
+ <div class="cards__desktop">
+  <div class="brookline__desktop">
+    <div class="img__section img__brookline">
+       <img src="../assets/cambridge.jpeg" alt="">
+       <div class="div__insideImg insideImg1">
+        <a href="">Pick Up - Delivery</a>
+       </div>
+       <div class="div__insideImg insideImg2">
+        <a href="">Menu</a>
+       </div>
+   </div>
+      
+          <!-- <div class="schedule__brookline">
+       <div class="schedule__days schedule">
+            <p>Mon-Wed</p>
+            <p>Thursday</p>
+            <p>Fri&Sat</p>
+            <p>Sunday</p>
+        </div>
+
+        <div class="schedule__hours schedule">
+           <p>11am - 9pm</p>
+           <p>11am - 9:30pm</p>
+           <p>11am - 10:30pm</p>
+           <p>12 - 9pm</p>
+       </div> -->
+
+       <h1 class="schedule__text">SCHEDULE</h1>
+
+       <table class="table__schedule table__cambridge">
+        <tr>
+          <th class="left">Mon-Wed</th>
+          <th class="right">11am - 9pm</th>
+        </tr>
+        <tr>
+          <th class="left">Thursday</th>
+          <th class="right">11am - 9:30pm</th>
+        </tr>
+        <tr>
+          <th class="left">Fri&Sat</th>
+          <th class="right">11am - 10:30pm</th>
+        </tr>
+        <tr>
+          <th class="left">Sun</th>
+          <th class="right">12 - 9pm</th>
+        </tr>
+       </table>
+
+       <div class="text__info__div">
+        <p class="text__info">Closed on July 4th, Christmas Eve and Christmas Day</p>
+      </div>
+
+
+   </div>
+
+   <div class="brookline__desktop">
+    <div class="img__section img__brookline">
+       <img src="../assets/Brookline.jpg" alt="">
+       <div class="div__insideImg insideImg1">
+        <a href="">Pick Up - Delivery</a>
+       </div>
+       <div class="div__insideImg insideImg2">
+        <a href="">Menu</a>
+       </div>
+   </div>
+      
+   <!-- <div class="schedule__brookline">
+       <div class="schedule__days schedule">
+            <p>Mon-Wed</p>
+            <p>Thursday</p>
+            <p>Fri&Sat</p>
+            <p>Sunday</p>
+        </div>
+
+        <div class="schedule__hours schedule">
+           <p>11am - 9pm</p>
+           <p>11am - 9:30pm</p>
+           <p>11am - 10:30pm</p>
+           <p>12 - 9pm</p>
+       </div> -->
+
+       <h1 class="schedule__text">SCHEDULE</h1>
+
+       <table class="table__schedule table__cambridge">
+        <tr>
+          <th class="left">Mon-Wed</th>
+          <th class="right">11am - 9pm</th>
+        </tr>
+        <tr>
+          <th class="left">Thursday</th>
+          <th class="right">11am - 9:30pm</th>
+        </tr>
+        <tr>
+          <th class="left">Fri&Sat</th>
+          <th class="right">11am - 10:30pm</th>
+        </tr>
+        <tr>
+          <th class="left">Sun</th>
+          <th class="right">12 - 9pm</th>
+        </tr>
+       </table>
+
+       <div class="text__info__div">
+        <p class="text__info">Closed on July 4th, Christmas Eve and Christmas Day</p>
+      </div>
+
+
+   </div>
+ </div>
+</main>
+
+<footer class="footer__sections">
+  <div>
+      <p></p>
+  </div>
+
+  <div class="footer__main">
+    <div class="footer__main__address">   
+      <a href="" class="a__design">1632 Beacon Street</a>
+      <p>Steps from washington square T stop</p>
+    </div>
+
+    <div>
+      <a href="#" class="a__phoneB">617-879-0707</a>
+      <a href="#" class="a__phoneC">617-945-0989</a>
+
+    </div>
+  </div>
+ </footer>
+
+<!-- 
+    <script>
+        document.getElementById('linkEstado').addEventListener('click', function(event) {
+          event.preventDefault(); // Previene la actualización del historial
+          // Aquí puedes cambiar el estado como necesites
+          console.log('Estado cambiado, pero sin actualizar el historial');
+        });
+      </script> -->
+<!-- 
+    <script>
+    document.getElementById('check1').addEventListener('change', function() {
+      const contenido = document.getElementById('cambridge');
+      if (this.checked) {
+        contenido.style.display = 'block';
+      } else {
+        contenido.style.display = 'none';
+      }
+    });
+  </script>
+
+<script>
+    document.getElementById('check2').addEventListener('change', function() {
+      const contenido = document.getElementById('brookline');
+      if (this.checked) {
+        contenido.style.display = 'block';
+      } else {
+        contenido.style.display = 'none';
+      }
+    });
+  </script> -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const radioButtons = document.querySelectorAll('input[name="location"]');
+      const cambridgeSection = document.querySelector('.cambridge');
+      const brooklineSection = document.querySelector('.brookline');
+      const aPhoneB = document.querySelector('.a__phoneB');
+      const aPhoneC = document.querySelector('.a__phoneC');
+      const radios = document.querySelectorAll('input[type="radio"]');
+      const containers = document.querySelectorAll('.container');
+      
+
+      // const checkedRadio = document.querySelector('input[name="location"]:checked');
+
+
+      
+      radioButtons.forEach(radio =>{
+        radio.addEventListener('change', function(){
+          if(this.value === 'cambridge' && this.checked){
+            cambridgeSection.style.display = 'none';
+            brooklineSection.style.display = 'block';
+            aPhoneB.style.display = 'block';
+            aPhoneC.style.display = 'none';
+
+          }else if (this.value === 'brookline' && this.checked){
+            cambridgeSection.style.display = 'block';
+            brooklineSection.style.display = 'none';
+            aPhoneB.style.display = 'none';
+            aPhoneC.style.display = 'block';
+          }
+        });
+      });
+
+      radios.forEach(radio => {
+    radio.addEventListener('change', function() {
+      // Eliminar la clase 'selected' de todos los contenedores
+
+      
+      document.querySelectorAll('.container').forEach(container => {
+        container.classList.remove('selected');
+      });
+      
+      // Agregar la clase 'selected' al contenedor del radio button seleccionado
+      if (radio.checked) {
+        radio.closest('.container').classList.add('selected');
+      }
+    });
+  });
+
+
+      // const checkedRadio = document.querySelector('input[name="location"]:checked');
+      // if(checkedRadio){
+      //   defaultRadio.checked = true;
+      //   checkedRadio.dispatchEvent(new Event('change'));
+      // }
+
+      const defaultRadio = document.getElementById('cambridge_check');
+            defaultRadio.checked = true;
+            defaultRadio.dispatchEvent(new Event('change'));
+            
+
+    });
+
+
+  </script>
+</body>
+</html>
+
+

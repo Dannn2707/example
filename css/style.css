@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-main: rgb(255, 130, 0);
+    --dark-main: rgb(26, 26, 26);
+    --font-main: "Roboto", sans-serif;
+}
+
+.body_index{
+   background-color: white;
+   overflow: hidden;
+}
+
+.div__logo a{
+    width: 20px;
+}
+
+.div__logo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.div__logo__img{
+    display: block;
+    margin: 0 auto;
+
+    animation: logoAnimation 6s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes logoAnimation {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.div__bg img{
+    position: fixed;
+    top: 150px;
+    right: -350px;
+    width: 600px;
+    z-index: -100;
+
+    animation: rotarImagen 1s 1 linear ;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+    transform: translateX(400px);
+
+
+}
+
+@keyframes rotarImagen {
+    from{
+        transform: translateX(500px) rotate(80deg);
+    }
+
+    to{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+.div__icons{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 450px;
+}
+
+@media screen and (min-width: 100px){
+    
+}
+
+.div__icons__icon{
+    color: black;
+    text-decoration: none;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    border: 3px solid red;
+    border-top: 3px solid var(--orange-main);
+    border-left: 3px solid var(--orange-main);
+    border-right: 3px solid rgb(106, 69, 0);
+    border-bottom: 3px solid rgb(106, 69, 0) ;
+
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 60px;
+
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.524) ;
+    transition: .2s;
+
+}
+
+.div__icons__icon:hover{
+    transform: scale(1.05);
+}
+
+
+.footer__socialMedia{
+
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+    max-width: 450px;
+}
+
+.footer__socialMedia a img{
+    height: 60px;
+}
+
+div{
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto; */
+
+
+}
+
+
+/* THIS STYLE IS FOR THE TRUCK SECTION!!!  */
+
+.main__truck{
+    background-color: var(--dark-main);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.img__truck{
+    width: 700px;
+    position: absolute;
+    left: -300px;
+    margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+    .img__truck{
+        display: block;
+        position: relative;
+        left: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+
+.div__truck{
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.div__truck__img{
+    width: 100%;
+}
+
+.div__paragraph{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.truck__paragraph{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.truck__comeSoon{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+/* TAKEOUT AND DELIVERY STYLE */
+
+.div__img{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+
+.delivery__img{
+    width: 120px;
+    text-align: center;
+}
+
+
+.delivery__h1{
+    text-align: center;
+}
+
+.div__locations__row{
+    background-color: var(--orange-main);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    
+}
+
+.div__locations__row a{
+    color: white;
+    text-decoration:  none;
+    display: block;
+    text-align: center;
+}
+
+/* ABOUT US */
+
+.hiddenOff{
+    max-width: 100vw;
+    overflow: auto;
+}
+
+.section__paragraph{
+    /* background-color: rgb(255, 115, 0); */
+}
+
+/* s */
+
+.header__about{
+    height: 10vh;
+
+}
+
+.header__about__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__about{
+    height: 10vh;
+
+}
+
+.div__paragraph__about{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main__aboutUs{
+    margin: 0 auto;
+}
+
+.p__stoked{
+    text-align: center;
+    font-family: var(--font-main);
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+
+
+/* .p__stoked__division::before{
+    content: url(../assets/division.png);
+    display: block;
+    width: 100%;
+   
+} */
+
+.tomatoes__hidden{
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+}
+
+.img__tomatoes__1{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    animation: tomatoe_1 5s infinite linear;
+    transform-origin: center;
+    animation-delay: .5s;
+    left: -100px;
+}
+
+@keyframes tomatoe_1 {
+    0%{
+        left: -100px;
+        rotate: 0deg;
+    }
+
+    100%{
+        left: 800px;
+        rotate: 800deg;
+    }
+}
+
+.img__tomatoes__2{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    animation: tomatoe_2 5s infinite linear;
+    transform-origin: center;
+    animation-delay: 3s;
+    left: -150px;
+}
+
+@keyframes tomatoe_2 {
+    0%{
+        left: -150px;
+        rotate: 0deg;
+    }
+
+    100%{
+        left: 800px;
+        rotate: 800deg;
+    }
+}
+
+
+
+.img__division{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img__division__2{
+    margin-top: 70px;
+}
+
+.rounded{
+    border-top: 3px solid #bbb;
+    border-radius: 5px;
+
+}
+
+.h2__meet{
+    text-align: center;
+}
+
+.img__two{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img__truck__about{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.Scot__card{
+
+}
+
+.cards__meet{
+    width: 90%;
+    background-color: rgb(233, 233, 233);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 450px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.418);
+    animation: cards 3s infinite linear;
+    
+}
+
+/* @keyframes cards {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px); 
+    }
+}
+
+.Toirm__card{
+    animation-delay: 2s;
+} */
+
+.cards__meet h1{
+    text-align: center;
+    color: white;
+    font-family: "Indie Flower", cursive;
+    font-size: 2rem;
+}
+
+.cards__meet p{
+    text-align: center;
+    color: #0f0f0f;
+    font-weight: 400;
+    font-size: .9rem;
+    font-family: "Indie Flower", cursive;
+}
+
+.banner-top__cards{
+    background-color: rgb(255, 126, 20);
+    height: 70px;
+    line-height: 70px;
+    border-radius: 10px 10px 0 0;
+}
+
+.banner__text{
+    padding: 20px 20px;
+}
+
+.h2__meet{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width:760px) {
+
+    .header__about__nav{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .img__division, .div__img__division{
+        display: none;
+    }
+
+    .tomatoes__hidden{
+        display: none;
+    }
+
+    .div__rows{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .img__truck__about2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .div__imgTruck{
+    }
+
+    .img__truck__about{
+        width: 75%;
+        display: block;
+    }
+
+    .p__stoked{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .div__rows__p{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .section__meet{
+       height: 90vh;
+    }
+
+    .img__two{
+        width: 40%;
+    }
+
+    .h2__meet{
+        background-color: rgb(255, 145, 0);
+        height: 70px;
+        color: white;
+        line-height: 70px;
+        font-size: 2rem;
+    }
+
+    .cards__section{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .card__grid{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cards__meet p{
+        font-size: 1.2rem;
+    }
+
+    .cards__meet{
+        height: 600px;
+        max-width: 600px;
+    }
+
+}
+
+/* Gift */
+
+.html_gift{
+    height: 120vh;
+}
+
+.header_gift{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form_gift{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+
+    border: 5px solid red;
+    border-top: 5px solid var(--orange-main);
+    border-left: 5px solid var(--orange-main);
+    border-right: 5px solid rgb(106, 69, 0);
+    border-bottom: 5px solid rgb(106, 69, 0) ;
+}
+
+.gift_h1_first{
+    text-align: center;
+}
+
+.input_gift{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: none;
+    outline: none;
+    position: relative;
+    border: 1px solid #cecece;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.textarea_gift{
+    height: 100px;
+}
+
+.body_gift{
+    height: 3dvh;
+}
+
+.img_logo_gift{
+    height: 80px;
+}
+
+.div_input_gift{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+
+}
+
+.div_input_gift p{
+    color: black;
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+.max_200_gift{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.i_gift_amount{
+    font-size: 1px;
+}
+
+#gift_input_i{
+    right: 20px;
+    font-size:1.2rem;
+    line-height: 25px;
+    color: #0f0f0f;
+
+}
+
+
+
+.div_input_gift span{
+    background-color: white;
+    width: 25px;
+}
+
+.input_gift_amount{
+    width: 100px;
+    margin: 0;
+    border-radius: 0;
+    height: 25px;
+}
+
+.div_input_gift div{
+    position: relative;
+}
+
+/* .div_input_gift div::after{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    content: "Max:200.00";
+    color: red;
+    font-size: 1rem;
+} */
+
+.personalize_section_gift{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.personalize_section_gift h1{
+    margin-top: 10px;
+}
+
+.input_personalize{
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#errorMessage{
+    font-size: 15px;
+    position: absolute;
+    width: 100px;
+    color: red;
+}
+
+/* Schedule Section */
+
+
+
+
+/* Practice input */
+
+.div_input_practice{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh);
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+.div_practice{
+    position: relative;
+    display: inline-block;
+}
+
+.input_practice{ 
+    position: relative;   
+    width: 400px;
+    height: 50px;
+}
+
+.bx-user{
+    position: absolute;
+    right: 20px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    top: 5px;
+}

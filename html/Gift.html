@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="html_gift">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="body_gift">
+
+    <header class="header_gift">
+        <div>
+            <a href="../index.html"><img src="../assets/logo.png" alt="" class="img_logo_gift"></a>
+        </div>
+
+        <div>
+            <h2>Stoked Wood Fired Pizza co</h2>
+            <a href="http://www.stokedpizzaco.com">http://www.stokedpizzaco.com</a>
+            <p>(617) 879-0707</p>
+        </div>
+    </header>
+    <main>
+
+        <form action="" class="form_gift">
+            <div class="gift_h1_first">
+                <h1>Give A Gift</h1>
+                <!-- <p>Choose Amount:</p> -->
+            </div>
+
+            <div>
+
+                <div class="div_input_gift">
+                    <p class="input_gift_amount_p">Amount:</p>
+                    <span class=""> <i class='bx bx-dollar' id="gift_input_i"></i></span>
+                    <div>
+                        <input type="text" max="200.00" min="0" class="input_gift input_gift_amount" id="input_num">
+                        <p id="errorMessage">Max: 200.00!</p>
+                        <script>
+                            const input = document.getElementById("input_num");
+                            const errorMessage = document.getElementById("errorMessage");
+
+                            input.addEventListener("keydown", (event) => {
+                                // Allow only numbers, Backspace, and a single dot
+                                const validKeys = /^[0-9.]$/;
+                                if (!validKeys.test(event.key) && event.key !== "Backspace") {
+                                    event.preventDefault();
+                                }
+                            });
+
+                            input.addEventListener("input", () => {
+                                let value = input.value;
+
+                                // Allow only valid numbers and truncate to 3 digits
+                                value = value.replace(/[^0-9.]/g, ""); // Remove invalid characters
+                                if (value.includes(".")) {
+                                    const [integerPart, decimalPart] = value.split(".");
+                                    value = integerPart.slice(0, 3) + (decimalPart ? "." + decimalPart.slice(0, 2) : "");
+                                } else {
+                                    value = value.slice(0, 3); // Truncate to 3 digits
+                                }
+
+                                // Validate value range (less than 200)
+                                if (parseFloat(value) >= 201) {
+                                    errorMessage.style.display = "block";
+                                } else {
+                                    errorMessage.style.display = "none";
+                                }
+
+                                input.value = value;
+                            });
+                        </script>
+                    </div>
+
+                </div>
+                <!-- <p class="max_200_gift">Max:$200.00</p> -->
+            </div>
+
+            <div class="personalize_section_gift">
+                <h1>Personalize</h1>
+                <p>To</p>
+                <input type="text" class="input_gift input_personalize">
+
+                <p>From</p>
+                <input type="text" class="input_gift input_personalize">
+
+                <p>Message</p>
+                <textarea name="" id="" class="input_gift textarea_gift input_personalize"></textarea>
+
+            </div>
+
+            <div class="schedule_section_gift">
+                <h1>Schedule Delivery</h1>
+
+                <p>Sent to</p>
+
+                <div>
+                    <a href="">Email</a>
+                    <input type="email">
+                </div>
+
+                <div>
+                    <a href="">Phone</a>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <h1>Deliver Date</h1>
+                    <input type="text">
+                </div>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
