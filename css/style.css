@@ -562,12 +562,14 @@ div{
     margin: 0 auto;
     margin-top: 20px;
     padding: 20px;
+    background-color: red;
+    
 
-    border: 5px solid red;
+    /* border: 5px solid red;
     border-top: 5px solid var(--orange-main);
     border-left: 5px solid var(--orange-main);
     border-right: 5px solid rgb(106, 69, 0);
-    border-bottom: 5px solid rgb(106, 69, 0) ;
+    border-bottom: 5px solid rgb(106, 69, 0) ; */
 }
 
 .gift_h1_first{
