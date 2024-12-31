@@ -553,8 +553,7 @@ div{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    background-color: var(--orange-main);
 }
 
 .form_gift{
@@ -685,6 +684,28 @@ div{
 
 /* Schedule Section */
 
+.div_schedule_input{
+    position: relative;
+    width: 100%;
+}
+
+.schedule_section_gift{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.input_schedule_gift{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+   
+}
+
+.input_schedule_gift_phone::before{
+    content: "phone";
+    color: #0f0f0f;
+    position: absolute;
+}
 
 
 
