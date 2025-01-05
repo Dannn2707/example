@@ -575,14 +575,19 @@ div{
 .input_gift{
     width: 100%;
     height: 40px;
-    border: none;
     border-radius: none;
-    outline: none;
     position: relative;
-    border: 1px solid #cecece;
+    border: 1px solid var(--orange-main);
     margin-top: 5px;
     margin-bottom: 5px;
+    outline: none;
     
+}
+
+.input_gift:focus{
+    border: 2px solid var(--orange-main);
+    transition: .5s;
+
 }
 
 .textarea_gift{
@@ -688,6 +693,33 @@ div{
 .div_schedule_input{
     position: relative;
     width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.input_schedule_gift{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid var(--orange-main);
+    outline: none;
+}
+
+.input_schedule_gift:focus{
+    border: 1px solid var(--orange-main);
+    outline: none;
+}
+
+
+.div_schedule_input span{
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+    font: 1rem;
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .schedule_section_gift{
@@ -695,18 +727,17 @@ div{
     text-align: center;
 }
 
-.input_schedule_gift{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-   
+.div_schedule_input input:valid ~ span, 
+.div_schedule_input input:focus ~ span{
+    color: var(--orange-main);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65rem;
+    padding: 0 10px;
+    background: white;
+    border-left: 1px solid var(--orange-main);
 }
 
-.input_schedule_gift_phone::before{
-    content: "phone";
-    color: #0f0f0f;
-    position: absolute;
-}
+
 
 
 
