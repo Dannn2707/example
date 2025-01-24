@@ -557,7 +557,7 @@ div{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--orange-main);
+    /* background-color: var(--orange-main); */
 }
 
 .h2_header_gift{
@@ -572,7 +572,7 @@ div{
     margin: 0 auto;
     margin-top: 20px;
     padding: 20px;
-    border: 5px solid var(--orange-main);
+    /* border: 5px solid var(--orange-main); */
     /* border-top: 5px solid var(--orange-main);
     border-left: 5px solid var(--orange-main);
     border-right: 5px solid rgb(106, 69, 0);
@@ -588,10 +588,10 @@ div{
 }
 
 #errorMessage{
-    left: 8px;
+    text-align: center;
     color: var(--orange-main);
     font-size: 15px;
-    position: absolute;
+    margin: 0 auto;
     width: 100px;
 }
 
@@ -624,7 +624,8 @@ div{
 }
 
 .img_logo_gift{
-    height: 80px;
+    height: 100px;
+    margin-top: 20px;
 }
 
 .div_input_gift{
@@ -643,15 +644,6 @@ div{
     line-height: 25px;
 }
 
-.max_200_gift{
-    text-align: right;
-    margin-right: 40px;
-}
-
-.i_gift_amount{
-    font-size: 1px;
-}
-
 #gift_input_i{
     right: 20px;
     font-size:1.2rem;
@@ -667,16 +659,38 @@ div{
     width: 25px;
 }
 
-.input_gift_amount{
-    width: 100px;
-    margin: 0;
-    border-radius: 0;
-    height: 25px;
+.div_dollarInput_gift{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }
 
-.div_input_gift div{
-    position: relative;
+.input_gift_amount{
+    width: 70%;
+    margin: 0;
+    border-radius: 0;
+    height: 35px;
+    padding: 3px 10px;
 }
+
+.div_input_gift{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gift_input_i{
+    font-size: 1.5rem;
+    line-height: 35px;
+    border: solid black 1px;
+    padding: 0;
+    height: 35px;
+}
+
+
+
 
 /* .div_input_gift div::after{
     position: absolute;

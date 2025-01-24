@@ -19,7 +19,7 @@
         <div>
             <!-- <h2 class="h2_header_gift">Stoked Wood Fired Pizza co</h2> -->
             <!-- <a href="http://www.stokedpizzaco.com">http://www.stokedpizzaco.com</a> -->
-            <p>(617) 879-0707</p>
+            <!-- <p>(617) 879-0707</p> -->
         </div>
     </header>
     <main>
@@ -34,9 +34,11 @@
 
                 <div class="div_input_gift">
                     <p class="input_gift_amount_p">Amount:</p>
-                    <span class=""> <i class='bx bx-dollar' id="gift_input_i"></i></span>
                     <div>
-                        <input type="text" max="200.00" min="0" class="input_gift input_gift_amount" id="input_num">
+                        <div class="div_dollarInput_gift">
+                            <span class=""> <i class='bx bx-dollar' id="gift_input_i"></i></span>
+                            <input type="text" max="200.00" min="0" class="input_gift input_gift_amount" id="input_num">
+                        </div>
                         <p id="errorMessage">Max: 200.00!</p>
                         <script>
                             const input = document.getElementById("input_num");
@@ -87,8 +89,27 @@
                 <input type="text" class="input_gift input_personalize">
 
                 <p>Message</p>
-                <textarea name="" id="" class="input_gift textarea_gift input_personalize"></textarea>
+                <textarea name="" id="messageGift" class="input_gift textarea_gift input_personalize"></textarea>
+                <p id="result">0/80</p>
+                <script>
+                    var myText = document.getElementById("messageGift");
+                    var result = document.getElementById("result");
+                    var limit = 80;
+                    result.textContent = 0 + "/" + limit;
 
+                    myText.addEventListener("input", function () {
+                        var textLength = myText.value.length;
+                        result.textContent = textLength + "/" + limit;
+
+                        if (textLength > limit) {
+                            myText.style.borderColor = "#FF232D";
+                            result.style.color = "#FF232D";
+                        }else {
+                            myText.style.borderColor = "#000";
+                            result.style.color = "#000";
+                        }
+                    });
+                </script>
             </div>
 
             <div class="schedule_section_gift">
@@ -97,18 +118,18 @@
                 <p>Sent to</p>
 
                 <div class="div_schedule_input">
-                    <input required="required" type="text" class="input_schedule_gift  input_schedule_gift_email" >
+                    <input required="required" type="text" class="input_schedule_gift  input_schedule_gift_email">
                     <span>Email</span>
                 </div>
 
-                <div  class="div_schedule_input">
-                    <input required="required" type="text"  class="input_schedule_gift input_schedule_gift_phone">
+                <div class="div_schedule_input">
+                    <input required="required" type="text" class="input_schedule_gift input_schedule_gift_phone">
                     <span>Phone</span>
                 </div>
 
                 <div>
                     <h1>Deliver Date</h1>
-                    <input type="text"  class="input_schedule_gift">
+                    <input type="text" class="input_schedule_gift">
                 </div>
             </div>
 
