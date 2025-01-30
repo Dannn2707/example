@@ -181,6 +181,8 @@ input[type="radio"]{
     border-bottom: solid 2px var(--orange-main);
 }
 
+/* Start? */
+
 .schedule__text{
     text-align: center;
 }
@@ -207,6 +209,8 @@ tr th{
 .right{
     text-align: right;
 }
+
+/* End */
 
 .img__section{
     width: 90%;
