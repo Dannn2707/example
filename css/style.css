@@ -162,6 +162,17 @@ div{
 
 }
 
+
+.div__icons_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+    height: 45vh;
+    
+}
+
 .main_header_div{
     display: flex;
     align-items: center;
@@ -179,13 +190,15 @@ div{
     color: var(--orange-main);
 }
 
+.schedule__text{
+    text-align: center;
+    margin-top: 40px;
+}
+
 .table__schedule{
     width: 90%;
     margin: 0 auto;
-    border-collapse: collapse;
-
-   
-   
+    border-collapse: collapse;   
 }
 
 tr th{
@@ -906,4 +919,30 @@ tr th{
     background-clip: text;
     animation: animate 5s linear infinite;
     background-size: 500%;
+}
+
+/* APPETAIZER SECTION */
+
+.logo_appe_div{
+    margin-top: 20px;
+    width: 100vw;
+
+}
+
+.logo_appe_div img{
+    margin-top: 20px;
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.appetairzer__div{
+    width: 100vw;
+    height: 140vh;
+}
+
+.appetairzer__div img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
