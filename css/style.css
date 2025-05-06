@@ -322,26 +322,33 @@ tr th{
 }
 
 .body_aboutUs{
-    overflow: hidden;
-    width: 100%;
+    width: 100vw;
 }
 
-.container_background_orange{
-    width: 100vw;
-    overflow: hidden;
-}
 
 .div_background_orange{
     background-color: #f39c12;
     position: absolute;
     height: 300px;
-    width: 500px;
-    left: -30px;
-    top: -60px;
-    transform: rotate(35deg) translate(10px, -100px);
+    width: 100%; 
     z-index: -10;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
    
 }
+
+
+
+.div_background_orange_down{
+    background-color: #f39c12;
+    position: absolute;
+    height: 300px;
+    width: 100%; 
+    z-index: -10;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+   
+}
+
+
 
 .pizza_roulette_section{
     overflow: hidden;
@@ -357,8 +364,69 @@ tr th{
     padding-bottom: 20px;
 }
 
-.logo_section_aboutUS img{
-     width: 100px;
+.pizza_roulette_section img{
+     width: 170px;
+}
+
+
+.pizza_roulette_1{
+    animation: pizza_1 5s linear 1s infinite ;
+    transform: translateX(400px);
+}
+
+@keyframes pizza_1 {
+    0%{
+        transform: translateX(400px) rotate(450deg);
+    }
+
+    100%{
+        transform: translateX(-800px) rotate(0deg);
+    }
+}
+
+.pizza_roulette_2{
+    animation: pizza_2 5s linear 1.5s infinite ;
+    transform: translateX(400px);
+}
+
+@keyframes pizza_2 {
+    0%{
+        transform: translateX(400px) rotate(450deg);
+    }
+
+    100%{
+        transform: translateX(-800px) rotate(0deg);
+    }
+}
+
+.pizza_roulette_3{
+    animation: pizza_3 5s linear 2s infinite ;
+    transform: translateX(400px);
+}
+
+@keyframes pizza_3 {
+    0%{
+        transform: translateX(400px) rotate(450deg);
+    }
+
+    100%{
+        transform: translateX(-800px) rotate(0deg);
+    }
+}
+
+.pizza_roulette_4{
+    animation: pizza_4 5s linear 2.5s infinite ;
+    transform: translateX(400px);
+}
+
+@keyframes pizza_4 {
+    0%{
+        transform: translateX(400px) rotate(450deg);
+    }
+
+    100%{
+        transform: translateX(-800px) rotate(0deg);
+    }
 }
 
 /* .pizzas_roulette_aboutUs{
@@ -372,11 +440,48 @@ tr th{
     display: inline-block;
 }
 
+.div_paragraph_aboutUs{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.parallax_1_div img{
+    width: 100%;
+    clip-path: polygon(0 23%, 100% 23%, 100% 77%, 0 77%);
+}
+
+.div_meet_the_team{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div_meet_icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.div_meet_icon h2{
+    font-family: "Parisienne", cursive;
+}
+
+.bxs-ghost{
+    color: black;
+    font-size: 3rem;
+}
+
+.ghost_icon{
+    font-size: 3rem;
+}
 /* Gift */
 
-.html_gift{
-    height: 120vh;
-}
+
 
 .body_gift{
     background-color: #ffffff;
