@@ -338,16 +338,6 @@ tr th{
 
 
 
-.div_background_orange_down{
-    background-color: #f39c12;
-    position: absolute;
-    height: 300px;
-    width: 100%; 
-    z-index: -10;
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-   
-}
-
 
 
 .pizza_roulette_section{
@@ -360,8 +350,11 @@ tr th{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+.logo_section_aboutUS a img{
+    width: 130px;
 }
 
 .pizza_roulette_section img{
@@ -444,11 +437,32 @@ tr th{
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 25px;
 }
+
+
+
+.div_scott{
+    position: relative;
+    padding-bottom: 25px;
+}
+
+
+.container_background_orange_down{
+    background-color: #ff9d00;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 300px;
+    width: 100%; 
+    z-index: -10;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+   
+}
+
 
 .parallax_1_div img{
     width: 100%;
-    clip-path: polygon(0 23%, 100% 23%, 100% 77%, 0 77%);
 }
 
 .div_meet_the_team{
@@ -467,18 +481,17 @@ tr th{
     align-items: center;
 }
 
+.div_meet_icon img{
+    width: 100px;
+    clip-path: circle(50% at 50% 50%);
+}
+
 .div_meet_icon h2{
     font-family: "Parisienne", cursive;
+    font-size: 2.2rem;
 }
 
-.bxs-ghost{
-    color: black;
-    font-size: 3rem;
-}
 
-.ghost_icon{
-    font-size: 3rem;
-}
 /* Gift */
 
 
