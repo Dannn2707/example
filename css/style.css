@@ -159,7 +159,14 @@ div{
 
 .main_header{
     height: 12vh;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 
+.section_takeOut{
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 
@@ -330,6 +337,10 @@ tr th{
 /* ABOUT US */
 
 .html_aboutUS{
+}
+
+.img_inter_abouUs_desktop{
+    display: none;
 }
 
 .body_aboutUs{
@@ -533,6 +544,11 @@ tr th{
         padding-right: 200px;
         padding-left: 200px;
         text-align: center;
+    }
+
+    .div_background_orange{
+        clip-path: none;
+        height: 120px;
     }
 }
 
