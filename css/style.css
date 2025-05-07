@@ -281,11 +281,21 @@ tr th{
 
 /* TAKEOUT AND DELIVERY STYLE */
 
+.main_delivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.div_options_delivery{
+    margin: 0 auto;
+}
+
 .div__img{
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
 }
 
 
@@ -299,13 +309,14 @@ tr th{
     text-align: center;
 }
 
+
 .div__locations__row{
     background-color: var(--orange-main);
     margin: 0 auto;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 80%;
+    width: 100%;
     
 }
 
@@ -332,7 +343,7 @@ tr th{
     height: 300px;
     width: 100%; 
     z-index: -10;
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 80%, 100% 0);
    
 }
 
@@ -350,7 +361,7 @@ tr th{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .logo_section_aboutUS a img{
@@ -438,6 +449,8 @@ tr th{
     margin: 0 auto;
     text-align: center;
     margin-top: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 
@@ -449,7 +462,7 @@ tr th{
 
 
 .container_background_orange_down{
-    background-color: #ff9d00;
+    background-color: #ffd797;
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -491,6 +504,38 @@ tr th{
     font-size: 2.2rem;
 }
 
+@media screen and (min-width: 480px){
+    .pizza_roulette_section{ 
+        display: none;
+    }
+
+    .parallax_1_div {
+        width: 100vw;
+      
+    }
+
+
+
+    .img_inter_abouUs_desktop{
+        max-height: 250px;
+        max-width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img_inter_abouUs{
+        max-height: 200px;
+        display: none;
+    }
+
+    .div_paragraph_aboutUs{
+        width: 70%;
+        padding-right: 200px;
+        padding-left: 200px;
+        text-align: center;
+    }
+}
+
 
 /* Gift */
 
@@ -525,6 +570,7 @@ tr th{
     border-right: 5px solid rgb(106, 69, 0);
     border-bottom: 5px solid rgb(106, 69, 0) ;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459); */
+    max-width: 500px;
 }
 
 .gift_h1_first{
@@ -800,6 +846,17 @@ tr th{
     animation: animate 5s linear infinite;
     background-size: 500%;
 }
+
+@media screen and (min-width: 650px) {
+    .form_gift{
+        background-color: #0f0f0f0c;
+        border-radius: 20px;
+        padding-left:80px;
+        padding-right: 80px;
+    }
+}
+
+
 
 /* APPETAIZER SECTION */
 
