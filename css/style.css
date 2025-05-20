@@ -2,38 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html{
+html {
     font-family: "Roboto", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --orange-main: rgb(255, 130, 0);
     --dark-main: rgb(26, 26, 26);
     --font-main: "Roboto", sans-serif;
 }
 
-.body_index{
-   background-color: white;
-   overflow: hidden;
+.body_index {
+    background-color: white;
+    overflow: hidden;
 }
 
-.div__logo a{
+.div__logo a {
     width: 20px;
 }
 
-.div__logo{
+.div__logo {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
 }
 
-.div__logo__img{
+.div__logo__img {
     display: block;
     margin: 0 auto;
 
@@ -42,26 +42,27 @@ html{
 }
 
 @keyframes logoAnimation {
-    0%{
+    0% {
         transform: translateY(0px);
     }
 
-    50%{
+    50% {
         transform: translateY(15px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
 
-.div__bg img{
+.div__bg img {
     position: fixed;
     top: 150px;
     right: -350px;
     width: 600px;
     z-index: -100;
 
-    animation: rotarImagen 1s 1 linear ;
+    animation: rotarImagen 1s 1 linear;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -72,17 +73,17 @@ html{
 }
 
 @keyframes rotarImagen {
-    from{
+    from {
         transform: translateX(500px) rotate(80deg);
     }
 
-    to{
+    to {
         transform: translateX(0px) rotate(0deg);
     }
 }
 
-.div__icons{
-  
+.div__icons {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,11 +95,9 @@ html{
     max-width: 450px;
 }
 
-@media screen and (min-width: 100px){
-    
-}
+@media screen and (min-width: 100px) {}
 
-.div__icons__icon{
+.div__icons__icon {
     color: black;
     text-decoration: none;
 
@@ -113,23 +112,23 @@ html{
     border-top: 3px solid var(--orange-main);
     border-left: 3px solid var(--orange-main);
     border-right: 3px solid rgb(106, 69, 0);
-    border-bottom: 3px solid rgb(106, 69, 0) ;
+    border-bottom: 3px solid rgb(106, 69, 0);
 
     font-size: 1.5rem;
     text-align: center;
     line-height: 60px;
 
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.524) ;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.524);
     transition: .2s;
 
 }
 
-.div__icons__icon:hover{
+.div__icons__icon:hover {
     transform: scale(1.05);
 }
 
 
-.footer__socialMedia{
+.footer__socialMedia {
 
     width: 80%;
     margin: 0 auto;
@@ -141,11 +140,11 @@ html{
     max-width: 450px;
 }
 
-.footer__socialMedia a img{
+.footer__socialMedia a img {
     height: 60px;
 }
 
-div{
+div {
     /* display: flex;
     flex-direction: column;
     gap: 20px;
@@ -157,30 +156,30 @@ div{
 
 /* This is for the Main TakeOut Place and menus Section */
 
-.main_header{
+.main_header {
     height: 12vh;
     max-width: 650px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.section_takeOut{
+.section_takeOut {
     max-width: 550px;
     margin: 0 auto;
 }
 
 
-.div__icons_main{
+.div__icons_main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 0 auto;
     width: 80%;
     height: 45vh;
-    
+
 }
 
-.main_header_div{
+.main_header_div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,27 +187,27 @@ div{
     height: 100%;
 }
 
-.main_header_img{
+.main_header_img {
     height: 80px;
 }
 
-.bx-menu{
+.bx-menu {
     font-size: 3rem;
     color: var(--orange-main);
 }
 
-.schedule__text{
+.schedule__text {
     text-align: center;
     margin-top: 40px;
 }
 
-.table__schedule{
+.table__schedule {
     width: 90%;
     margin: 0 auto;
-    border-collapse: collapse;   
+    border-collapse: collapse;
 }
 
-tr th{
+tr th {
     border-bottom: 2px solid var(--orange-main);
     padding-top: 10px;
     padding-bottom: 15px;
@@ -220,18 +219,18 @@ tr th{
     font-style: normal;
 }
 
-.left{
+.left {
     text-align: left;
 }
 
-.right{
+.right {
     text-align: right;
 }
 
 
 /* THIS STYLE IS FOR THE TRUCK SECTION!!!  */
 
-.main__truck{
+.main__truck {
     background-color: var(--dark-main);
     overflow: hidden;
     width: 100vw;
@@ -239,7 +238,7 @@ tr th{
     position: relative;
 }
 
-.img__truck{
+.img__truck {
     width: 700px;
     position: absolute;
     left: -300px;
@@ -247,7 +246,7 @@ tr th{
 }
 
 @media (min-width: 900px) {
-    .img__truck{
+    .img__truck {
         display: block;
         position: relative;
         left: auto;
@@ -258,28 +257,28 @@ tr th{
     }
 }
 
-.div__truck{
+.div__truck {
     margin: 0 auto;
     width: 100px;
     margin-top: 20px;
 }
 
-.div__truck__img{
+.div__truck__img {
     width: 100%;
 }
 
-.div__paragraph{
+.div__paragraph {
     width: 90%;
     margin: 0 auto;
 }
 
-.truck__paragraph{
+.truck__paragraph {
     text-align: center;
     margin-top: 20px;
     color: white;
 }
 
-.truck__comeSoon{
+.truck__comeSoon {
     color: white;
     text-align: center;
     margin-top: 10px;
@@ -288,83 +287,79 @@ tr th{
 
 /* TAKEOUT AND DELIVERY STYLE */
 
-.main_delivery{
+.main_delivery {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-.div_options_delivery{
+
+.div_options_delivery {
     margin: 0 auto;
 }
 
-.div__img{
+.div__img {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
 
-.delivery__img{
+.delivery__img {
     width: 120px;
     text-align: center;
 }
 
 
-.delivery__h1{
+.delivery__h1 {
     text-align: center;
 }
 
 
-.div__locations__row{
+.div__locations__row {
     background-color: var(--orange-main);
     margin: 0 auto;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-    
+
 }
 
-.div__locations__row a{
+.div__locations__row a {
     color: white;
-    text-decoration:  none;
+    text-decoration: none;
     display: block;
     text-align: center;
 }
 
 /* ABOUT US */
 
-.html_aboutUS{
-}
-
-.img_inter_abouUs_desktop{
-    display: none;
-}
+.html_aboutUS {}
 
 
 
-.div_background_orange{
+.div_background_orange {
     background-color: #f39c12;
     position: absolute;
     height: 300px;
-    width: 100%; 
+    width: 100%;
     z-index: -10;
     clip-path: polygon(0 0, 100% 80%, 100% 0);
-   
+
 }
 
 
 
 
 
-.pizza_roulette_section{
+.pizza_roulette_section {
     overflow: hidden;
     display: flex;
 }
 
-.logo_section_aboutUS{
+.logo_section_aboutUS {
     width: 100vw;
     display: flex;
     align-items: center;
@@ -372,71 +367,71 @@ tr th{
     padding-top: 60px;
 }
 
-.logo_section_aboutUS a img{
+.logo_section_aboutUS a img {
     width: 130px;
 }
 
-.pizza_roulette_section img{
-     width: 170px;
+.pizza_roulette_section img {
+    width: 170px;
 }
 
 
-.pizza_roulette_1{
-    animation: pizza_1 5s linear 1s infinite ;
+.pizza_roulette_1 {
+    animation: pizza_1 5s linear 1s infinite;
     transform: translateX(400px);
 }
 
 @keyframes pizza_1 {
-    0%{
+    0% {
         transform: translateX(400px) rotate(450deg);
     }
 
-    100%{
+    100% {
         transform: translateX(-800px) rotate(0deg);
     }
 }
 
-.pizza_roulette_2{
-    animation: pizza_2 5s linear 1.5s infinite ;
+.pizza_roulette_2 {
+    animation: pizza_2 5s linear 1.5s infinite;
     transform: translateX(400px);
 }
 
 @keyframes pizza_2 {
-    0%{
+    0% {
         transform: translateX(400px) rotate(450deg);
     }
 
-    100%{
+    100% {
         transform: translateX(-800px) rotate(0deg);
     }
 }
 
-.pizza_roulette_3{
-    animation: pizza_3 5s linear 2s infinite ;
+.pizza_roulette_3 {
+    animation: pizza_3 5s linear 2s infinite;
     transform: translateX(400px);
 }
 
 @keyframes pizza_3 {
-    0%{
+    0% {
         transform: translateX(400px) rotate(450deg);
     }
 
-    100%{
+    100% {
         transform: translateX(-800px) rotate(0deg);
     }
 }
 
-.pizza_roulette_4{
-    animation: pizza_4 5s linear 2.5s infinite ;
+.pizza_roulette_4 {
+    animation: pizza_4 5s linear 2.5s infinite;
     transform: translateX(400px);
 }
 
 @keyframes pizza_4 {
-    0%{
+    0% {
         transform: translateX(400px) rotate(450deg);
     }
 
-    100%{
+    100% {
         transform: translateX(-800px) rotate(0deg);
     }
 }
@@ -447,12 +442,15 @@ tr th{
     
 } */
 
-.pizzas_roulette_aboutUs img{
-    width: 200px;
-    display: inline-block;
+
+.img_inter_abouUs {
+    max-height: 350px;
+    display: block;
+    margin: 0 auto;
+
 }
 
-.div_paragraph_aboutUs{
+.div_paragraph_aboutUs {
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -463,30 +461,25 @@ tr th{
 
 
 
-.div_scott{
+.div_scott {
     position: relative;
     padding-bottom: 25px;
 }
 
 
-.container_background_orange_down{
-    background-color: #ffd797;
+.container_background_orange_down {
+    background-color: #ff9d00;
     position: absolute;
     bottom: 0px;
     left: 0;
     height: 300px;
-    width: 100%; 
+    width: 100%;
     z-index: -10;
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
-   
+
 }
 
-
-.parallax_1_div img{
-    width: 100%;
-}
-
-.div_meet_the_team{
+.div_meet_the_team {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -494,7 +487,11 @@ tr th{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.div_meet_icon{
+.div_meet_the_team h2{
+    color: black;
+}
+
+.div_meet_icon {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -502,76 +499,71 @@ tr th{
     align-items: center;
 }
 
-.div_meet_icon img{
+.div_meet_icon img {
     width: 100px;
     clip-path: circle(50% at 50% 50%);
 }
 
-.div_meet_icon h2{
+.div_meet_icon h2 {
     font-family: "Parisienne", cursive;
     font-size: 2.2rem;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
 
-    .div_paragraph_aboutUs{
-        width: 60%;
+    .div_paragraph_aboutUs {
+        width: 40%;
     }
 
-    .body_aboutUs{
+    .body_aboutUs {
         position: relative;
-        height: 220vh;
+        height: calc(100% + 100px);
     }
-    
-    .pizza_roulette_section{ 
+
+    .pizza_roulette_section {
         display: none;
     }
 
     .parallax_1_div {
         width: 100vw;
-      
+
     }
 
 
 
-    .img_inter_abouUs_desktop{
-        max-height: 250px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
 
-    .img_inter_abouUs{
-        max-height: 200px;
-        display: none;
-    }
 
-    .div_paragraph_aboutUs_cards{
-        width: 400px;   
+    .div_paragraph_aboutUs_cards {
+        width: 400px;
+        line-height: 1.6;
         padding-left: 40px;
-        padding-right: 40   px;
+        padding-right: 40px;
         padding-bottom: 40px;
         text-align: center;
-        background-color: hsla(0, 0%, 56%, 0.151);
+        background-color: hsl(0, 0%, 100%);
         border-radius: 10px;
-        box-shadow: rgba(255, 145, 27, 0.4) 5px 5px, rgba(240, 137, 46, 0.3) 10px 10px, rgba(240, 143, 46, 0.2) 15px 15px, rgba(255, 148, 54, 0.1) 20px 20px, rgba(240, 133, 46, 0.05) 25px 25px;    }
+        box-shadow: rgba(0, 0, 0, 0.2) 5px 5px, rgba(0, 0, 0, 0.1) 10px 10px, rgba(0, 0, 0, 0.07) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+        filter: drop-shadow(0 0 6px black);
+    }
 
-    .div_background_orange{
+
+    .div_background_orange {
         clip-path: none;
         height: 120px;
-    } 
+    }
 
-    .cards_aboutUs{
+    .cards_aboutUs {
         display: flex;
         flex-direction: row;
         width: 80%;
         margin: 0 auto;
+        margin-top: 40px;
         justify-content: space-evenly;
-        margin-bottom: 70px;
+        padding-bottom: 70px;
 
     }
 
-    .div_meet_the_team h2{
+    .div_meet_the_team h2 {
         font-size: 3.5rem;
     }
 }
@@ -581,25 +573,25 @@ tr th{
 
 
 
-.body_gift{
+.body_gift {
     background-color: #ffffff;
 }
 
-.header_gift{
+.header_gift {
     display: flex;
     align-items: center;
     flex-direction: column;
     /* background-color: var(--orange-main); */
 }
 
-.h2_header_gift{
+.h2_header_gift {
     text-transform: uppercase;
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 
-.form_gift{
+.form_gift {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
@@ -613,14 +605,14 @@ tr th{
     max-width: 500px;
 }
 
-.gift_h1_first{
+.gift_h1_first {
     text-align: center;
     margin-bottom: 10px;
     /* color: var(--orange-main); */
     color: black;
 }
 
-#errorMessage{
+#errorMessage {
     text-align: center;
     color: var(--orange-main);
     font-size: 15px;
@@ -631,7 +623,7 @@ tr th{
 
 
 
-.input_gift{
+.input_gift {
     width: 100%;
     height: 40px;
     border-radius: none;
@@ -643,25 +635,25 @@ tr th{
     transition: .5s;
 }
 
-.input_gift:focus{
+.input_gift:focus {
     border: 1px solid var(--orange-main);
 
 }
 
-.textarea_gift{
+.textarea_gift {
     height: 100px;
 }
 
-.body_gift{
+.body_gift {
     height: 3dvh;
 }
 
-.img_logo_gift{
+.img_logo_gift {
     height: 100px;
     margin-top: 20px;
 }
 
-.div_input_gift{
+.div_input_gift {
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -670,16 +662,16 @@ tr th{
 
 }
 
-.div_input_gift p{
+.div_input_gift p {
     color: black;
     font-size: 1.2rem;
     margin-right: 20px;
     line-height: 25px;
 }
 
-#gift_input_i{
+#gift_input_i {
     right: 20px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     line-height: 25px;
     color: #0f0f0f;
 
@@ -687,19 +679,19 @@ tr th{
 
 
 
-.div_input_gift span{
+.div_input_gift span {
     background-color: white;
     width: 25px;
 }
 
-.div_dollarInput_gift{
+.div_dollarInput_gift {
     margin: 10px 0;
     display: flex;
     align-items: center;
     margin-left: 30px;
 }
 
-.input_gift_amount{
+.input_gift_amount {
     width: 70%;
     margin: 0;
     border-radius: 0;
@@ -707,14 +699,14 @@ tr th{
     padding: 3px 10px;
 }
 
-.div_input_gift{
+.div_input_gift {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#gift_input_i{
+#gift_input_i {
     font-size: 1.5rem;
     line-height: 35px;
     border: solid black 1px;
@@ -734,14 +726,14 @@ tr th{
     font-size: 1rem;
 } */
 
-.personalize_section_gift{
+.personalize_section_gift {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 }
 
 
-.personalize_section_gift h1{
+.personalize_section_gift h1 {
     text-transform: uppercase;
     margin-bottom: 15px;
     color: transparent;
@@ -754,26 +746,26 @@ tr th{
 }
 
 @keyframes animate {
-    0%{
+    0% {
         background-position: 0 100%;
     }
-     
-    50%{
+
+    50% {
         background-position: 100% 0%;
     }
 
-    100%{
+    100% {
         background-position: 0 100%;
     }
 
 }
 
-.personalize_section_gift p{
+.personalize_section_gift p {
     font-size: 1rem;
     text-align: center;
 }
 
-.input_personalize{
+.input_personalize {
     color: black;
     font-size: 1rem;
     text-align: left;
@@ -784,7 +776,7 @@ tr th{
 /* Schedule Section */
 
 /* u dont fucking understand wtf its going on in there wtf.  */
-.div_schedule_input{
+.div_schedule_input {
     position: relative;
     width: 100%;
     padding: 0;
@@ -793,7 +785,7 @@ tr th{
 }
 
 
-.input_schedule_gift{
+.input_schedule_gift {
     padding: 5px;
     width: 100%;
     /* border: 2px solid ; */
@@ -801,13 +793,13 @@ tr th{
     /* border: 2px solid rgb(92, 92, 92); */
 }
 
-.input_schedule_gift:focus{
+.input_schedule_gift:focus {
     border: 2px solid var(--orange-main);
     outline: none;
 }
 
 
-.div_schedule_input span{
+.div_schedule_input span {
     position: absolute;
     left: 0;
     padding: 8px;
@@ -817,13 +809,13 @@ tr th{
     transition: 0.5s;
 }
 
-.schedule_section_gift{
+.schedule_section_gift {
     font-size: .8rem;
     text-align: center;
 }
 
-.div_schedule_input input:valid ~ span, 
-.div_schedule_input input:focus ~ span{
+.div_schedule_input input:valid~span,
+.div_schedule_input input:focus~span {
     color: var(--orange-main);
     transform: translateX(10px) translateY(-7px);
     font-size: 0.75rem;
@@ -838,7 +830,7 @@ tr th{
 
 /* Practice input */
 
-.div_input_practice{ 
+.div_input_practice {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -848,18 +840,18 @@ tr th{
 
 
 
-.div_practice{
+.div_practice {
     position: relative;
     display: inline-block;
 }
 
-.input_practice{ 
-    position: relative;   
+.input_practice {
+    position: relative;
     width: 400px;
     height: 50px;
 }
 
-.bx-user{
+.bx-user {
     position: absolute;
     right: 20px;
     font-size: 2.5rem;
@@ -867,7 +859,7 @@ tr th{
     top: 5px;
 }
 
-.div_practice_text_flex{
+.div_practice_text_flex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -875,7 +867,7 @@ tr th{
     height: 85vh;
 }
 
-.div_practice_text_flex h1{ 
+.div_practice_text_flex h1 {
     font-size: 10rem;
     text-transform: uppercase;
     margin-top: 15px;
@@ -888,10 +880,10 @@ tr th{
 }
 
 @media screen and (min-width: 650px) {
-    .form_gift{
+    .form_gift {
         background-color: #0f0f0f0c;
         border-radius: 20px;
-        padding-left:80px;
+        padding-left: 80px;
         padding-right: 80px;
     }
 }
@@ -904,7 +896,7 @@ tr th{
 
 
 
-.appetairzer__div{
+.appetairzer__div {
     width: 100vw;
     height: 140vh;
     display: flex;
@@ -912,7 +904,7 @@ tr th{
     align-items: center;
 }
 
-.appetairzer__div img{
+.appetairzer__div img {
     width: 100%;
     margin-bottom: 20px;
     max-width: 550px;
