@@ -343,9 +343,6 @@ tr th{
     display: none;
 }
 
-.body_aboutUs{
-    width: 100vw;
-}
 
 
 .div_background_orange{
@@ -516,6 +513,16 @@ tr th{
 }
 
 @media screen and (min-width: 480px){
+
+    .div_paragraph_aboutUs{
+        width: 60%;
+    }
+
+    .body_aboutUs{
+        position: relative;
+        height: 220vh;
+    }
+    
     .pizza_roulette_section{ 
         display: none;
     }
@@ -529,7 +536,7 @@ tr th{
 
     .img_inter_abouUs_desktop{
         max-height: 250px;
-        max-width: 70%;
+        max-width: 100%;
         display: block;
         margin: 0 auto;
     }
@@ -539,16 +546,33 @@ tr th{
         display: none;
     }
 
-    .div_paragraph_aboutUs{
-        width: 70%;
-        padding-right: 200px;
-        padding-left: 200px;
+    .div_paragraph_aboutUs_cards{
+        width: 400px;   
+        padding-left: 40px;
+        padding-right: 40   px;
+        padding-bottom: 40px;
         text-align: center;
-    }
+        background-color: hsla(0, 0%, 56%, 0.151);
+        border-radius: 10px;
+        box-shadow: rgba(255, 145, 27, 0.4) 5px 5px, rgba(240, 137, 46, 0.3) 10px 10px, rgba(240, 143, 46, 0.2) 15px 15px, rgba(255, 148, 54, 0.1) 20px 20px, rgba(240, 133, 46, 0.05) 25px 25px;    }
 
     .div_background_orange{
         clip-path: none;
         height: 120px;
+    } 
+
+    .cards_aboutUs{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        margin-bottom: 70px;
+
+    }
+
+    .div_meet_the_team h2{
+        font-size: 3.5rem;
     }
 }
 
@@ -876,26 +900,20 @@ tr th{
 
 /* APPETAIZER SECTION */
 
-.logo_appe_div{
-    margin-top: 20px;
-    width: 100vw;
 
-}
 
-.logo_appe_div img{
-    margin-top: 20px;
-    display: block;
-    height: 100px;
-    margin: 0 auto;
-}
+
 
 .appetairzer__div{
     width: 100vw;
     height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .appetairzer__div img{
-    margin-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
+    margin-bottom: 20px;
+    max-width: 550px;
 }
