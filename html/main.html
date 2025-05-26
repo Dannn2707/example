@@ -9,21 +9,29 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
+
+
 <body>
-  <header class="main_header">
-    <div class="main_header_div">
-      <a href="../index.html" class=""><img class="main_header_img" src="../assets/logo.png" alt=""></a>
-      <a href="#"> <i class='bx bx-menu'></i></a>
-    </div>
-  </header>
+
+
+  
   <main>
-    <section class="section_takeOut">
+
+    
+    <section class="section_takeOut" id="main_menu">
+
+      <header class="main_header">
+        <div class="main_header_div">
+          <a href="../index.html" class=""><img class="main_header_img" src="../assets/logo.png" alt=""></a>
+          <a href="#"> <i class='bx bx-menu'></i></a>
+        </div>
+      </header>
       <div class="div__icons_main">
-        <a href="main_html/appetairzer.html" class="div__icons__icon">Appetaizer and salads</a>
-        <a href="" class="div__icons__icon">Pizzas</a>
-        <a href="" class="div__icons__icon">Cocktails</a>
-        <a href="" class="div__icons__icon">Beers</a>
-        <a href="" class="div__icons__icon">Vegan Menu</a>
+        <a href="#" onclick="showSection(event, 'appetairzer__div')" class="div__icons__icon" >Appetaizer and salads</a>
+        <a href=""  onclick="showSection(event, 'pizzas__div')" class="div__icons__icon">Pizzas</a>
+        <a href="" onclick="showSection(event, 'beer__div')" class="div__icons__icon">Cocktails</a>
+        <!-- <a href="" onclick="showSection(event, 'appetairzer__div')" class="div__icons__icon">Beers</a> -->
+        <a href="" onclick="showSection(event, 'vegan__div')" class="div__icons__icon">Vegan Menu</a>
       </div>
 
       <div class="schedule_main">
@@ -49,7 +57,60 @@
         </table>
       </div>
     </section>
+
+
+
+      <div class="appetairzer__div" id="appetairzer__div" style="display: none;">
+        <div class="flex_appetairzer_div">
+          <a href="/html/main.html" class=""><img src="/assets/logo.png" alt=""></a>
+          <img src="../../assets/menu_appetaizer_1.jpg" alt="">
+          <img src="../../assets/menu_appetaizer_2.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="appetairzer__div" id="pizzas__div" style="display: none;">
+        <div class="flex_appetairzer_div">
+          <a href="/html/main.html" class=""><img src="/assets/logo.png" alt=""></a>
+          <img src="../assets/menu_pizzas_1.jpg" alt="">
+          <img src="../assets/menu_pizzas_2.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="appetairzer__div" id="beer__div" style="display: none;">
+        <div class="flex_appetairzer_div">
+          <a href="/html/main.html" class=""><img src="/assets/logo.png" alt=""></a>
+          <img src="../assets/beer_1.jpg" alt="">
+          <img src="../assets/beer_2.jpg" alt="">
+          <img src="../assets/beer_3.jpg" alt="">
+          <img src="../assets/beer_4.jpg" alt="">
+          <img src="../assets/beer_5.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="appetairzer__div" id="vegan__div" style="display: none;">
+        <div class="flex_appetairzer_div">
+          <a href="/html/main.html" class=""><img src="/assets/logo.png" alt=""></a>
+          <img src="../assets/vegan_1.jpg" alt="">
+          <img src="../assets/vegan_2.jpg" alt="">
+        </div>
+
+      </div>
   </main>
+
+  <script>
+    function showSection(event, sectionId) {
+      event.preventDefault();
+      document.querySelectorAll('.appetairzer__div').forEach(div => div.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'inline-block';
+      document.getElementById('main_menu').style.display = 'none';
+
+    }
+  </script>
+
+  
 </body>
 
 </html>
